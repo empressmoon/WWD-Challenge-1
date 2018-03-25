@@ -78,20 +78,17 @@ body {
 }
 
 .logo-top {
-  opacity: 0.3;
   text-align: center;
   margin-top: 40px;
 }
 
-.logo-bottom {
+.logo {
   opacity: 0.3;
 }
 
-
 .container {
   max-width: 1050px;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
@@ -103,8 +100,7 @@ body {
   -moz-flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 1200px;
-  
+  height: 1200px;  
 }
 
 .box {
@@ -124,6 +120,8 @@ body {
   border-radius: 3px;
   padding: 20px 20px 5px 20px;
 }
+
+/* INPUT FIELDS */
 
 .input-item {
   width: 100%;
@@ -229,16 +227,11 @@ h2 {
 
 .item-flex {
   display: flex;
-  flex-direction: row;
-  border: 1px pink solid;
   justify-content: space-between;
+  align-items: baseline;
 }
 
-.btn-container {
-  width: 100%;
-  text-align: right;
-  border: 1px solid black;
-}
+/* BUTTONS */
 
 /* large green button */
 
@@ -266,6 +259,8 @@ h2 {
 .green-btn:hover {
   background: linear-gradient(#97d02b, #72ae1c);
 }
+
+/* small green button */
 
 .green-btn-small {
   background-image: linear-gradient(#a2d73e, #80c41f);
@@ -310,6 +305,8 @@ h2 {
   font-size: 1.1rem;
  }
 
+/* red button */
+
 .red-btn {
   background-image: linear-gradient(#f65e6f, #f03848);
   border: 1px solid #a2202a;
@@ -327,10 +324,7 @@ h2 {
   background: linear-gradient(#f54659, #ee2032);
 }
 
-
-
-
-/* icons in input field */
+/* ICONS IN INPUT FIELD */
 
 input[id=username] {
   background: url(icons/user.png) no-repeat 16px 50%, url(icons/line.png) no-repeat 60px 4px; 
@@ -352,19 +346,8 @@ input[id=phone] {
   background: url(icons/phone.png) no-repeat 20px 50%, url(icons/line.png) no-repeat 60px 4px; 
 }
 
+
 /* MEDIA QUERIES */
-/*
-  @media all and (max-width: 480px) {
-  
-  .logo {
-    max-width: 250px;
-  }
-
-  .box {
-  width: calc(100% - 5px);
-}
-
-} */
 
 @media all and (max-width: 860px) {
   .container {
@@ -379,19 +362,50 @@ input[id=phone] {
 @media all and (max-width: 660px) {
   
   .box {
-  width: calc(100% - 100px);
+  width: calc(100% - 150px);
   }
 } 
 
  @media all and (max-width: 480px) {
   .box {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
+  }
+
+  .logo {
+    max-width: 300px;
   }
 }
 
-@media all and (max-width: 342px) {
+@media all and (max-width: 360px) {
   .red-btn {
     font-size: 0.7rem;
+  }
+
+  .item-flex {
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 290px;
+  }
+}
+
+@media all and (max-width: 322px) {
+  .item-flex {
+    flex-direction: column;
+  }
+
+  .green-btn-small, .red-btn {
+    width: 100%;
+  }
+
+  .red-btn, .disabled {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .logo {
+    max-width: 200px;
   }
 }
 
