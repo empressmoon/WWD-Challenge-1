@@ -6,6 +6,6 @@
 <li>Flexbox</li>
 </ul>
 
-live: <a href="https://empressmoon.github.io/WWD-Challenge-1/">https://empressmoon.github.io/WWD-Challenge-1/</a>
+live: <a href="https://empressmoon.github.io/Weekly-Web-Dev-Challenge-1//">https://empressmoon.github.io/Weekly-Web-Dev-Challenge-1/</a>
 
 'Challenge 1' from:  <a href="https://www.facebook.com/groups/940002776068923/">Weekly WebDev Challenge</a>
